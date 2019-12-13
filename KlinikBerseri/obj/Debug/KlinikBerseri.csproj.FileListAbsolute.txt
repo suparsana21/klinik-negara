@@ -1,1 +1,9 @@
 c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\KlinikBerseri.exe.config
+c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\KlinikBerseri.exe
+c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\KlinikBerseri.pdb
+c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.csprojResolveAssemblyReference.cache
+c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.Form1.resources
+c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.Properties.Resources.resources
+c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.csproj.GenerateResource.Cache
+c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.exe
+c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.pdb
