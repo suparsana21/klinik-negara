@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace KlinikBerseri
 {
@@ -15,6 +16,7 @@ namespace KlinikBerseri
         public Form1()
         {
             InitializeComponent();
+            //acha acha
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
