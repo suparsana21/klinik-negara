@@ -4,15 +4,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KlinikBerseri.Model
+namespace KlinikBerseri.Data
 {
     class Doctor
     {
-        string id { get; set; }
-        string name { get; set; }
-        string address { get; set; }
-        string phone { get; set; }
-        string specialist { get; set; }
+        private string id, name, address,phone,specialist;
+
+        public string Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string Address
+        {
+            get { return address; }
+            set { address = value; }
+        }
+
+        public string Phone
+        {
+            get { return phone; }
+            set { phone = value; }
+        }
+        public string Specialist
+        {
+            get { return specialist; }
+            set { specialist = value; }
+        }
     }
 
 

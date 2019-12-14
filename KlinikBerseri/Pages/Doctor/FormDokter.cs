@@ -1,4 +1,5 @@
-﻿using KlinikBerseri.Pages.Doctor;
+﻿//using KlinikBerseri.Controller;
+using KlinikBerseri.Pages.Doctor;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,8 @@ namespace KlinikBerseri
 {
     public partial class FormDokter : Form
     {
+        //DoctorController doctorController = new DoctorController();
+
         public FormDokter()
         {
             InitializeComponent();
@@ -20,7 +23,7 @@ namespace KlinikBerseri
 
         private void FormDokter_Load(object sender, EventArgs e)
         {
-            
+            initData();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,6 +31,16 @@ namespace KlinikBerseri
             ModalDoctor modalDoctor = new ModalDoctor();
             modalDoctor.ShowDialog();
 
+        }
+
+        private void dgvListDokter_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        void initData()
+        {
+           
         }
     }
 }

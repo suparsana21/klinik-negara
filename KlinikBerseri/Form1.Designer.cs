@@ -46,6 +46,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,6 +101,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.btnLaporanRiwayatPasien);
             this.panel2.Controls.Add(this.btnLaporanPemeriksaan);
             this.panel2.Controls.Add(this.label5);
@@ -121,7 +123,7 @@
             this.btnLaporanRiwayatPasien.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.btnLaporanRiwayatPasien.FlatAppearance.BorderSize = 0;
             this.btnLaporanRiwayatPasien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLaporanRiwayatPasien.Location = new System.Drawing.Point(3, 356);
+            this.btnLaporanRiwayatPasien.Location = new System.Drawing.Point(3, 416);
             this.btnLaporanRiwayatPasien.Name = "btnLaporanRiwayatPasien";
             this.btnLaporanRiwayatPasien.Size = new System.Drawing.Size(207, 45);
             this.btnLaporanRiwayatPasien.TabIndex = 10;
@@ -134,7 +136,7 @@
             this.btnLaporanPemeriksaan.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.btnLaporanPemeriksaan.FlatAppearance.BorderSize = 0;
             this.btnLaporanPemeriksaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLaporanPemeriksaan.Location = new System.Drawing.Point(0, 307);
+            this.btnLaporanPemeriksaan.Location = new System.Drawing.Point(0, 367);
             this.btnLaporanPemeriksaan.Name = "btnLaporanPemeriksaan";
             this.btnLaporanPemeriksaan.Size = new System.Drawing.Size(207, 45);
             this.btnLaporanPemeriksaan.TabIndex = 9;
@@ -144,7 +146,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 279);
+            this.label5.Location = new System.Drawing.Point(12, 339);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 8;
@@ -156,7 +158,7 @@
             this.btnDataPemeriksaan.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.btnDataPemeriksaan.FlatAppearance.BorderSize = 0;
             this.btnDataPemeriksaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataPemeriksaan.Location = new System.Drawing.Point(0, 221);
+            this.btnDataPemeriksaan.Location = new System.Drawing.Point(0, 281);
             this.btnDataPemeriksaan.Name = "btnDataPemeriksaan";
             this.btnDataPemeriksaan.Size = new System.Drawing.Size(207, 45);
             this.btnDataPemeriksaan.TabIndex = 7;
@@ -166,7 +168,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 195);
+            this.label4.Location = new System.Drawing.Point(12, 255);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 13);
             this.label4.TabIndex = 6;
@@ -175,7 +177,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 12);
+            this.label3.Location = new System.Drawing.Point(12, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 5;
@@ -187,7 +189,7 @@
             this.btnFormPemeriksaan.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.btnFormPemeriksaan.FlatAppearance.BorderSize = 0;
             this.btnFormPemeriksaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormPemeriksaan.Location = new System.Drawing.Point(3, 136);
+            this.btnFormPemeriksaan.Location = new System.Drawing.Point(0, 197);
             this.btnFormPemeriksaan.Name = "btnFormPemeriksaan";
             this.btnFormPemeriksaan.Size = new System.Drawing.Size(207, 45);
             this.btnFormPemeriksaan.TabIndex = 4;
@@ -200,12 +202,13 @@
             this.btnFormPasien.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.btnFormPasien.FlatAppearance.BorderSize = 0;
             this.btnFormPasien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormPasien.Location = new System.Drawing.Point(0, 86);
+            this.btnFormPasien.Location = new System.Drawing.Point(0, 146);
             this.btnFormPasien.Name = "btnFormPasien";
             this.btnFormPasien.Size = new System.Drawing.Size(207, 45);
             this.btnFormPasien.TabIndex = 3;
             this.btnFormPasien.Text = "Data Pasien";
             this.btnFormPasien.UseVisualStyleBackColor = false;
+            this.btnFormPasien.Click += new System.EventHandler(this.btnFormPasien_Click);
             // 
             // btnFormDokter
             // 
@@ -213,7 +216,7 @@
             this.btnFormDokter.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.btnFormDokter.FlatAppearance.BorderSize = 0;
             this.btnFormDokter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormDokter.Location = new System.Drawing.Point(0, 37);
+            this.btnFormDokter.Location = new System.Drawing.Point(0, 97);
             this.btnFormDokter.Name = "btnFormDokter";
             this.btnFormDokter.Size = new System.Drawing.Size(207, 45);
             this.btnFormDokter.TabIndex = 2;
@@ -253,6 +256,20 @@
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(849, 586);
             this.mainPanel.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(0, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(207, 45);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Dashboard";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -301,6 +318,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Button button1;
     }
 }
 

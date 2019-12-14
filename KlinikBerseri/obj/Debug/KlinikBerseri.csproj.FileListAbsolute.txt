@@ -8,3 +8,8 @@ C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBer
 C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\KlinikBerseri.pdb
 C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.exe
 C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.pdb
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.csprojResolveAssemblyReference.cache
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\System.ValueTuple.dll
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\System.ValueTuple.xml
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.Pages.Patient.ListPatient.resources
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.Pages.Dashboard.resources

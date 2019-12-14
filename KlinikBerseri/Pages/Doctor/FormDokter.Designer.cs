@@ -140,6 +140,7 @@
             this.dgvListDokter.ReadOnly = true;
             this.dgvListDokter.Size = new System.Drawing.Size(877, 527);
             this.dgvListDokter.TabIndex = 0;
+            this.dgvListDokter.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListDokter_CellContentClick);
             // 
             // idx
             // 
