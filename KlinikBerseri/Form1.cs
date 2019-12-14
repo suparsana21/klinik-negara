@@ -35,7 +35,7 @@ namespace KlinikBerseri
             mainForm.mainPanel.Controls.Add(frmDokter);
             frmDokter.Show();
 
-            //asdfasdfas
+            //acaha acaha nehi
         }
 
         private void btnFormDokter_Click(object sender, EventArgs e)
