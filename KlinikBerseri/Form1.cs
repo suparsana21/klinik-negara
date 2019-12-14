@@ -21,5 +21,28 @@ namespace KlinikBerseri
         {
             Dispose();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Form1 mainForm = new Form1();
+            mainForm.CenterToScreen();
+
+            FormDokter frmDokter = new FormDokter();
+            frmDokter.TopLevel = false;
+            frmDokter.MdiParent = mainForm;
+            mainForm.mainPanel.Controls.Add(frmDokter);
+            frmDokter.Show();
+
+
+        }
+
+        private void btnFormDokter_Click(object sender, EventArgs e)
+        {
+            
+            FormDokter frmDokter = new FormDokter();
+            frmDokter.TopLevel = false;
+            mainPanel.Controls.Add(frmDokter);
+            frmDokter.Show();
+        }
     }
 }

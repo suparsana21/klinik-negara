@@ -30,28 +30,32 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnFormDokter = new System.Windows.Forms.Button();
+            this.btnFormPasien = new System.Windows.Forms.Button();
+            this.btnFormPemeriksaan = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnDataPemeriksaan = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnLaporanPemeriksaan = new System.Windows.Forms.Button();
+            this.btnLaporanRiwayatPasien = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mainPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label2);
@@ -60,19 +64,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1056, 49);
             this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(207, 637);
-            this.label1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(15, 15, 0, 15);
-            this.label1.Size = new System.Drawing.Size(121, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Copyright©2019";
             // 
             // pictureBox1
             // 
@@ -100,15 +91,15 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.btnLaporanRiwayatPasien);
+            this.panel2.Controls.Add(this.btnLaporanPemeriksaan);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btnDataPemeriksaan);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnFormPemeriksaan);
+            this.panel2.Controls.Add(this.btnFormPasien);
+            this.panel2.Controls.Add(this.btnFormDokter);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 49);
             this.panel2.Name = "panel2";
@@ -124,44 +115,45 @@
             this.panel3.Size = new System.Drawing.Size(72, 49);
             this.panel3.TabIndex = 4;
             // 
-            // button1
+            // btnFormDokter
             // 
-            this.button1.BackColor = System.Drawing.Color.Gainsboro;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 45);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Data Dokter";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnFormDokter.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnFormDokter.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnFormDokter.FlatAppearance.BorderSize = 0;
+            this.btnFormDokter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormDokter.Location = new System.Drawing.Point(0, 37);
+            this.btnFormDokter.Name = "btnFormDokter";
+            this.btnFormDokter.Size = new System.Drawing.Size(207, 45);
+            this.btnFormDokter.TabIndex = 2;
+            this.btnFormDokter.Text = "Data Dokter";
+            this.btnFormDokter.UseVisualStyleBackColor = false;
+            this.btnFormDokter.Click += new System.EventHandler(this.btnFormDokter_Click);
             // 
-            // button2
+            // btnFormPasien
             // 
-            this.button2.BackColor = System.Drawing.Color.Gainsboro;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(0, 86);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(207, 45);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Data Pasien";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnFormPasien.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnFormPasien.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnFormPasien.FlatAppearance.BorderSize = 0;
+            this.btnFormPasien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormPasien.Location = new System.Drawing.Point(0, 86);
+            this.btnFormPasien.Name = "btnFormPasien";
+            this.btnFormPasien.Size = new System.Drawing.Size(207, 45);
+            this.btnFormPasien.TabIndex = 3;
+            this.btnFormPasien.Text = "Data Pasien";
+            this.btnFormPasien.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnFormPemeriksaan
             // 
-            this.button3.BackColor = System.Drawing.Color.Gainsboro;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(3, 136);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(207, 45);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Data Pemeriksaan";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnFormPemeriksaan.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnFormPemeriksaan.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnFormPemeriksaan.FlatAppearance.BorderSize = 0;
+            this.btnFormPemeriksaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormPemeriksaan.Location = new System.Drawing.Point(3, 136);
+            this.btnFormPemeriksaan.Name = "btnFormPemeriksaan";
+            this.btnFormPemeriksaan.Size = new System.Drawing.Size(207, 45);
+            this.btnFormPemeriksaan.TabIndex = 4;
+            this.btnFormPemeriksaan.Text = "Data Pemeriksaan";
+            this.btnFormPemeriksaan.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -181,18 +173,18 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Pemeriksaan";
             // 
-            // button4
+            // btnDataPemeriksaan
             // 
-            this.button4.BackColor = System.Drawing.Color.Gainsboro;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 221);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(207, 45);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Data Pemeriksaan";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnDataPemeriksaan.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnDataPemeriksaan.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnDataPemeriksaan.FlatAppearance.BorderSize = 0;
+            this.btnDataPemeriksaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDataPemeriksaan.Location = new System.Drawing.Point(0, 221);
+            this.btnDataPemeriksaan.Name = "btnDataPemeriksaan";
+            this.btnDataPemeriksaan.Size = new System.Drawing.Size(207, 45);
+            this.btnDataPemeriksaan.TabIndex = 7;
+            this.btnDataPemeriksaan.Text = "Data Pemeriksaan";
+            this.btnDataPemeriksaan.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -203,31 +195,64 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Laporan";
             // 
-            // button5
+            // btnLaporanPemeriksaan
             // 
-            this.button5.BackColor = System.Drawing.Color.Gainsboro;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(0, 307);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(207, 45);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Laporan Pemeriksaan";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnLaporanPemeriksaan.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnLaporanPemeriksaan.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnLaporanPemeriksaan.FlatAppearance.BorderSize = 0;
+            this.btnLaporanPemeriksaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLaporanPemeriksaan.Location = new System.Drawing.Point(0, 307);
+            this.btnLaporanPemeriksaan.Name = "btnLaporanPemeriksaan";
+            this.btnLaporanPemeriksaan.Size = new System.Drawing.Size(207, 45);
+            this.btnLaporanPemeriksaan.TabIndex = 9;
+            this.btnLaporanPemeriksaan.Text = "Laporan Pemeriksaan";
+            this.btnLaporanPemeriksaan.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnLaporanRiwayatPasien
             // 
-            this.button6.BackColor = System.Drawing.Color.Gainsboro;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(3, 356);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(207, 45);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Laporan Riwayat Pasien";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnLaporanRiwayatPasien.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnLaporanRiwayatPasien.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnLaporanRiwayatPasien.FlatAppearance.BorderSize = 0;
+            this.btnLaporanRiwayatPasien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLaporanRiwayatPasien.Location = new System.Drawing.Point(3, 356);
+            this.btnLaporanRiwayatPasien.Name = "btnLaporanRiwayatPasien";
+            this.btnLaporanRiwayatPasien.Size = new System.Drawing.Size(207, 45);
+            this.btnLaporanRiwayatPasien.TabIndex = 10;
+            this.btnLaporanRiwayatPasien.Text = "Laporan Riwayat Pasien";
+            this.btnLaporanRiwayatPasien.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(207, 635);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(849, 48);
+            this.panel4.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, -2);
+            this.label1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(15, 15, 0, 15);
+            this.label1.Size = new System.Drawing.Size(115, 50);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Copyright©2019";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.UseCompatibleTextRendering = true;
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(207, 49);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(849, 586);
+            this.mainPanel.TabIndex = 4;
             // 
             // Form1
             // 
@@ -235,41 +260,47 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1056, 683);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnFormDokter;
+        private System.Windows.Forms.Button btnFormPasien;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnFormPemeriksaan;
+        private System.Windows.Forms.Button btnLaporanRiwayatPasien;
+        private System.Windows.Forms.Button btnLaporanPemeriksaan;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnDataPemeriksaan;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel mainPanel;
     }
 }
 

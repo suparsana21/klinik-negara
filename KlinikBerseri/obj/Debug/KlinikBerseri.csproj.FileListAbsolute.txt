@@ -7,3 +7,5 @@ c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBer
 c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.csproj.GenerateResource.Cache
 c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.exe
 c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.pdb
+c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.FormDokter.resources
+c:\users\suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.Pages.Doctor.ModalDoctor.resources
