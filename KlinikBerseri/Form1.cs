@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//awaokwaowkoakwokawok
+using MySql.Data.MySqlClient;
+
 namespace KlinikBerseri
 {
     public partial class Form1 : Form
@@ -15,6 +16,7 @@ namespace KlinikBerseri
         public Form1()
         {
             InitializeComponent();
+            //acha acha
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -33,7 +35,7 @@ namespace KlinikBerseri
             mainForm.mainPanel.Controls.Add(frmDokter);
             frmDokter.Show();
 
-            //asdfasdfas
+            //acaha acaha nehi
         }
 
         private void btnFormDokter_Click(object sender, EventArgs e)
