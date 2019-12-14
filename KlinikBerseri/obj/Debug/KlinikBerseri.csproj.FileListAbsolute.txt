@@ -1,0 +1,10 @@
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.Form1.resources
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.FormDokter.resources
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.Pages.Doctor.ModalDoctor.resources
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.Properties.Resources.resources
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.csproj.GenerateResource.Cache
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\KlinikBerseri.exe.config
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\KlinikBerseri.exe
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\KlinikBerseri.pdb
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.exe
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.pdb
