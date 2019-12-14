@@ -3,6 +3,7 @@
 *.exe
 *.pdb
 /build/
+/Debug/
 *.suo
 *.user
 _ReSharper.*/
@@ -15,3 +16,4 @@ TestResult.xml
 Version.cs
 Version.h
 Version.cpp
+*.lock
