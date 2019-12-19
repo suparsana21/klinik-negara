@@ -8,3 +8,30 @@ C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBer
 C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\KlinikBerseri.pdb
 C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.exe
 C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.pdb
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\KlinikBerseri.exe.config
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\KlinikBerseri.exe
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\KlinikBerseri.pdb
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\obj\Debug\KlinikBerseri.csprojAssemblyReference.cache
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\obj\Debug\KlinikBerseri.Form1.resources
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\obj\Debug\KlinikBerseri.FormDokter.resources
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\obj\Debug\KlinikBerseri.Pages.Doctor.ModalDoctor.resources
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\obj\Debug\KlinikBerseri.Properties.Resources.resources
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\obj\Debug\KlinikBerseri.csproj.GenerateResource.cache
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\obj\Debug\KlinikBerseri.exe
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\obj\Debug\KlinikBerseri.pdb
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\MySql.Data.dll
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\MySql.Web.dll
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\Google.Protobuf.dll
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\BouncyCastle.Crypto.dll
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\Renci.SshNet.dll
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\MySql.Data.xml
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\MySql.Web.xml
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\obj\Debug\KlinikBerseri.csproj.CopyComplete
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\EntityFramework.dll
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\EntityFramework.SqlServer.dll
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\EntityFramework.xml
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\EntityFramework.SqlServer.xml
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\bin\Debug\MySql.Data.Entity.EF6.xml
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\obj\Debug\KlinikBerseri.Pages.Patient.FormPatient.resources
+D:\pemrogramanVisual\clone-klinik\klinik-negara\KlinikBerseri\obj\Debug\KlinikBerseri.Pages.Patient.ModalPatient.resources

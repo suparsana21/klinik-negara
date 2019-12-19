@@ -206,6 +206,7 @@
             this.btnFormPasien.TabIndex = 3;
             this.btnFormPasien.Text = "Data Pasien";
             this.btnFormPasien.UseVisualStyleBackColor = false;
+            this.btnFormPasien.Click += new System.EventHandler(this.btnFormPasien_Click);
             // 
             // btnFormDokter
             // 

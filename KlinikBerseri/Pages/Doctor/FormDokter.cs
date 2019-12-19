@@ -13,6 +13,8 @@ namespace KlinikBerseri
 {
     public partial class FormDokter : Form
     {
+        DoctorDAO doctorDAO = new DoctorDAO();
+
         public FormDokter()
         {
             InitializeComponent();
@@ -20,14 +22,21 @@ namespace KlinikBerseri
 
         private void FormDokter_Load(object sender, EventArgs e)
         {
-            
+            getAllData();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ModalDoctor modalDoctor = new ModalDoctor();
+            ModalDoctor modalDoctor = new ModalDoctor(this);
             modalDoctor.ShowDialog();
 
+        }
+
+        public void getAllData()
+        {
+            DataSet data = doctorDAO.getData();
+            dgvListDokter.DataSource = data;
+            dgvListDokter.DataMember = "doctors";
         }
     }
 }

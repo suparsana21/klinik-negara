@@ -10,47 +10,38 @@ using System.Windows.Forms;
 
 namespace KlinikBerseri.Pages.Doctor
 {
+
     public partial class ModalDoctor : Form
     {
-        FormDokter frmDokter;
-        public ModalDoctor()
+        FormDokter formDokter;
+        DoctorDAO doctorDAO = new DoctorDAO();
+        public ModalDoctor(FormDokter parentForm)
         {
+            formDokter = parentForm;
             InitializeComponent();
         }
 
+
         private void btnSave_Click(object sender, EventArgs e)
         {
-            String name,
-                   address,
-                   phone,
-                   specialist;
-            int specialistIdx;
+            DoctorModel doctor = new DoctorModel();
 
-            name    = edtNama.Text.ToString();
-            address = edtAddress.Text.ToString();
-            phone = edtPhone.Text.ToString();
-            specialist = cmbSpecialist.SelectedItem.ToString();
-            specialistIdx = cmbSpecialist.SelectedIndex;
-            frmDokter = new FormDokter();
+            doctor.Name = edtNama.Text;
+            doctor.Address = edtAddress.Text;
+            doctor.Phone = edtPhone.Text;
+            doctor.Specialist = cmbSpecialist.Text;
+            bool insert = doctorDAO.insertData(doctor);
 
-            DataGridViewRow row = (DataGridViewRow)frmDokter
-                    .dgvListDokter.Rows[0].Clone();
-                    row.Cells[0].Value = "1";
-                    row.Cells[1].Value = name;
-                    row.Cells[2].Value = address;
-                    row.Cells[3].Value = phone;
-                    row.Cells[4].Value = specialist;
-
-            frmDokter
-                .dgvListDokter
-                .Rows.Add(row);
-
-            Dispose();
+            if (insert) 
+            {
+                formDokter.getAllData();
+                Dispose();
+            }
         }
 
         private void ModalDoctor_Load(object sender, EventArgs e)
         {
+            
         }
-
     }
 }

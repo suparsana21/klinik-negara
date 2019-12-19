@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using KlinikBerseri.Pages.Patient;
 
 namespace KlinikBerseri
 {
@@ -34,7 +35,11 @@ namespace KlinikBerseri
             mainForm.mainPanel.Controls.Add(frmDokter);
             frmDokter.Show();
 
-            //acaha acaha nehi
+            FormPatient formPatient = new FormPatient();
+            formPatient.TopLevel = false;
+            formPatient.MdiParent = mainForm;
+            mainForm.mainPanel.Controls.Add(formPatient);
+            formPatient.Show();
         }
 
         private void btnFormDokter_Click(object sender, EventArgs e)
@@ -44,6 +49,14 @@ namespace KlinikBerseri
             frmDokter.TopLevel = false;
             mainPanel.Controls.Add(frmDokter);
             frmDokter.Show();
+        }
+
+        private void btnFormPasien_Click(object sender, EventArgs e)
+        {
+            FormPatient formPatient = new FormPatient();
+            formPatient.TopLevel = false;
+            mainPanel.Controls.Add(formPatient);
+            formPatient.Show();
         }
     }
 }
