@@ -13,3 +13,14 @@ C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBer
 C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\System.ValueTuple.xml
 C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.Pages.Patient.ListPatient.resources
 C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\obj\Debug\KlinikBerseri.Pages.Dashboard.resources
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\MySql.Data.dll
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\MySql.Data.xml
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\AutoMapper.dll
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\EntityFramework.dll
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\AutoMapper.pdb
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\AutoMapper.xml
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\EntityFramework.xml
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Suparsana\documents\visual studio 2013\Projects\KlinikBerseri\KlinikBerseri\bin\Debug\MySql.Data.Entity.EF6.xml

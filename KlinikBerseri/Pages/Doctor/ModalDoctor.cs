@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KlinikBerseri.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,8 +14,12 @@ namespace KlinikBerseri.Pages.Doctor
     public partial class ModalDoctor : Form
     {
         FormDokter frmDokter;
-        public ModalDoctor()
+
+        DoctorController doctorController = new DoctorController();
+
+        public ModalDoctor(FormDokter parentFrm)
         {
+            frmDokter = parentFrm;
             InitializeComponent();
         }
 
@@ -31,21 +36,22 @@ namespace KlinikBerseri.Pages.Doctor
             phone = edtPhone.Text.ToString();
             specialist = cmbSpecialist.SelectedItem.ToString();
             specialistIdx = cmbSpecialist.SelectedIndex;
-            frmDokter = new FormDokter();
 
-            DataGridViewRow row = (DataGridViewRow)frmDokter
-                    .dgvListDokter.Rows[0].Clone();
-                    row.Cells[0].Value = "1";
-                    row.Cells[1].Value = name;
-                    row.Cells[2].Value = address;
-                    row.Cells[3].Value = phone;
-                    row.Cells[4].Value = specialist;
+            bool insert = doctorController.insertData(
+                name,
+                address,
+                phone,
+                specialist
+                );
 
-            frmDokter
-                .dgvListDokter
-                .Rows.Add(row);
+            if (insert)
+            {
+                frmDokter.initData();
 
-            Dispose();
+                Dispose();
+            }
+
+            
         }
 
         private void ModalDoctor_Load(object sender, EventArgs e)

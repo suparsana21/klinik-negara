@@ -36,11 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvListDokter = new System.Windows.Forms.DataGridView();
-            this.idx = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.specialist = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -118,12 +113,6 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvListDokter.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListDokter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListDokter.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idx,
-            this.name,
-            this.address,
-            this.phone,
-            this.specialist});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Tw Cen MT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,44 +125,14 @@
             this.dgvListDokter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvListDokter.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvListDokter.Location = new System.Drawing.Point(0, 0);
+            this.dgvListDokter.MultiSelect = false;
             this.dgvListDokter.Name = "dgvListDokter";
             this.dgvListDokter.ReadOnly = true;
+            this.dgvListDokter.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListDokter.Size = new System.Drawing.Size(877, 527);
             this.dgvListDokter.TabIndex = 0;
             this.dgvListDokter.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListDokter_CellContentClick);
-            // 
-            // idx
-            // 
-            this.idx.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.idx.HeaderText = "No";
-            this.idx.Name = "idx";
-            this.idx.ReadOnly = true;
-            this.idx.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.idx.Width = 55;
-            // 
-            // name
-            // 
-            this.name.HeaderText = "Nama";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // address
-            // 
-            this.address.HeaderText = "Alamat";
-            this.address.Name = "address";
-            this.address.ReadOnly = true;
-            // 
-            // phone
-            // 
-            this.phone.HeaderText = "No Telp";
-            this.phone.Name = "phone";
-            this.phone.ReadOnly = true;
-            // 
-            // specialist
-            // 
-            this.specialist.HeaderText = "Spesialis";
-            this.specialist.Name = "specialist";
-            this.specialist.ReadOnly = true;
+            this.dgvListDokter.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvListDokter_MouseClick);
             // 
             // FormDokter
             // 
@@ -204,11 +163,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idx;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn specialist;
         public System.Windows.Forms.DataGridView dgvListDokter;
 
     }
