@@ -8,18 +8,19 @@ using System.Data;
 
 namespace KlinikBerseri
 {
-    class DoctorDAO
+    class ActionDAO
     {
+
         private MySqlCommand command = null;
         string config = "Server=localhost;Port=3306;UID=root;PWD=;Database=dbklinikberseri";
         MySqlConnection connection = new MySqlConnection();
 
-        public DoctorDAO()
+        public ActionDAO()
         {
             connection.ConnectionString = config;
         }
 
-        public DataSet getData() 
+        public DataSet getData()
         {
             DataSet dataSet = new DataSet();
             try
@@ -28,18 +29,19 @@ namespace KlinikBerseri
                 command = new MySqlCommand();
                 command.Connection = connection;
                 command.CommandType = CommandType.Text;
-                command.CommandText = "SELECT * FROM doctors";
+                command.CommandText = "SELECT * FROM actions";
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(command);
                 dataAdapter.Fill(dataSet, "doctors");
                 connection.Close();
             }
-            catch (MySqlException) {
-                
+            catch (MySqlException)
+            {
+
             }
             return dataSet;
         }
 
-        public bool insertData(DoctorModel doctor)
+        public bool insertData(ActionModel action)
         {
             Boolean stat = false;
             try
@@ -48,13 +50,14 @@ namespace KlinikBerseri
                 command = new MySqlCommand();
                 command.Connection = connection;
                 command.CommandType = CommandType.Text;
-                command.CommandText = "INSERT INTO doctors VALUES ('','" + doctor.Name + "','" + doctor.Address + "','" + doctor.Phone + "','" + doctor.Specialist + "')";
+                command.CommandText = "INSERT INTO actions VALUES ('','" + action.Name + "','" + action.Price + "')";
                 command.ExecuteNonQuery();
                 stat = true;
                 connection.Close();
             }
-            catch(MySqlException) {
-            
+            catch (MySqlException)
+            {
+
             }
             return stat;
         }
@@ -68,7 +71,7 @@ namespace KlinikBerseri
                 command = new MySqlCommand();
                 command.Connection = connection;
                 command.CommandType = CommandType.Text;
-                command.CommandText = "DELETE FROM doctors WHERE id='"+id+"'";
+                command.CommandText = "DELETE FROM actions WHERE id='" + id + "'";
                 command.ExecuteNonQuery();
                 stat = true;
                 connection.Close();
@@ -80,7 +83,7 @@ namespace KlinikBerseri
             return stat;
         }
 
-        public bool editData(string id)
+        public bool updateData(ActionModel action, int id)
         {
             Boolean stat = false;
             try
@@ -89,28 +92,7 @@ namespace KlinikBerseri
                 command = new MySqlCommand();
                 command.Connection = connection;
                 command.CommandType = CommandType.Text;
-                command.CommandText = "SELECT * FORM doctors WHERE id='" + id + "'";
-                command.ExecuteNonQuery();
-                stat = true;
-                connection.Close();
-            }
-            catch (MySqlException)
-            {
-
-            }
-            return stat;
-        }
-
-        public bool updateData(DoctorModel doctor, int id)
-        {
-            Boolean stat = false;
-            try
-            {
-                connection.Open();
-                command = new MySqlCommand();
-                command.Connection = connection;
-                command.CommandType = CommandType.Text;
-                command.CommandText = "UPDATE doctors SET name='"+doctor.Name+"', address='"+doctor.Address+"', phone='"+doctor.Phone+"', '"+doctor.Specialist+"' WHERE id='"+id+"'";
+                command.CommandText = "UPDATE actions SET name='" + action.Name + "', price='" + action.Price + "' WHERE id='" + id + "'";
                 command.ExecuteNonQuery();
                 stat = true;
                 connection.Close();

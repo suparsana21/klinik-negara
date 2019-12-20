@@ -40,7 +40,7 @@
             this.btnDataPemeriksaan = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnFormPemeriksaan = new System.Windows.Forms.Button();
+            this.btnFormAction = new System.Windows.Forms.Button();
             this.btnFormPasien = new System.Windows.Forms.Button();
             this.btnFormDokter = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -106,7 +106,7 @@
             this.panel2.Controls.Add(this.btnDataPemeriksaan);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.btnFormPemeriksaan);
+            this.panel2.Controls.Add(this.btnFormAction);
             this.panel2.Controls.Add(this.btnFormPasien);
             this.panel2.Controls.Add(this.btnFormDokter);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -162,6 +162,7 @@
             this.btnDataPemeriksaan.TabIndex = 7;
             this.btnDataPemeriksaan.Text = "Data Pemeriksaan";
             this.btnDataPemeriksaan.UseVisualStyleBackColor = false;
+            this.btnDataPemeriksaan.Click += new System.EventHandler(this.btnDataPemeriksaan_Click);
             // 
             // label4
             // 
@@ -181,18 +182,19 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Master Data";
             // 
-            // btnFormPemeriksaan
+            // btnFormAction
             // 
-            this.btnFormPemeriksaan.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnFormPemeriksaan.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.btnFormPemeriksaan.FlatAppearance.BorderSize = 0;
-            this.btnFormPemeriksaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormPemeriksaan.Location = new System.Drawing.Point(3, 136);
-            this.btnFormPemeriksaan.Name = "btnFormPemeriksaan";
-            this.btnFormPemeriksaan.Size = new System.Drawing.Size(207, 45);
-            this.btnFormPemeriksaan.TabIndex = 4;
-            this.btnFormPemeriksaan.Text = "Data Pemeriksaan";
-            this.btnFormPemeriksaan.UseVisualStyleBackColor = false;
+            this.btnFormAction.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnFormAction.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnFormAction.FlatAppearance.BorderSize = 0;
+            this.btnFormAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormAction.Location = new System.Drawing.Point(3, 136);
+            this.btnFormAction.Name = "btnFormAction";
+            this.btnFormAction.Size = new System.Drawing.Size(207, 45);
+            this.btnFormAction.TabIndex = 4;
+            this.btnFormAction.Text = "Data Tindakan";
+            this.btnFormAction.UseVisualStyleBackColor = false;
+            this.btnFormAction.Click += new System.EventHandler(this.btnFormAction_Click);
             // 
             // btnFormPasien
             // 
@@ -293,7 +295,7 @@
         private System.Windows.Forms.Button btnFormDokter;
         private System.Windows.Forms.Button btnFormPasien;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnFormPemeriksaan;
+        private System.Windows.Forms.Button btnFormAction;
         private System.Windows.Forms.Button btnLaporanRiwayatPasien;
         private System.Windows.Forms.Button btnLaporanPemeriksaan;
         private System.Windows.Forms.Label label5;

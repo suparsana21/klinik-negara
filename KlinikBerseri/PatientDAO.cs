@@ -61,7 +61,7 @@ namespace KlinikBerseri
             return stat;
         }
 
-        public bool deleteData(int id)
+        public bool deleteData(string id)
         {
             Boolean stat = false;
             try
@@ -70,7 +70,28 @@ namespace KlinikBerseri
                 command = new MySqlCommand();
                 command.Connection = connection;
                 command.CommandType = CommandType.Text;
-                command.CommandText = "DELETE FROM patient WHERE id='" + id + "'";
+                command.CommandText = "DELETE FROM patients WHERE id='" + id + "'";
+                command.ExecuteNonQuery();
+                stat = true;
+                connection.Close();
+            }
+            catch (MySqlException)
+            {
+
+            }
+            return stat;
+        }
+
+        public bool editData(string id)
+        {
+            Boolean stat = false;
+            try
+            {
+                connection.Open();
+                command = new MySqlCommand();
+                command.Connection = connection;
+                command.CommandType = CommandType.Text;
+                command.CommandText = "SELECT * FORM patients WHERE id='" + id + "'";
                 command.ExecuteNonQuery();
                 stat = true;
                 connection.Close();
@@ -91,7 +112,7 @@ namespace KlinikBerseri
                 command = new MySqlCommand();
                 command.Connection = connection;
                 command.CommandType = CommandType.Text;
-                command.CommandText = "UPDATE doctor SET name='" + patient.Name + "', gendre='" + patient.Gendre + "', address='" + patient.Address + "', phone='" + patient.Phone + "' WHERE id='" + id + "'";
+                command.CommandText = "UPDATE patients SET name='" + patient.Name + "', gendre='" + patient.Gendre + "', address='" + patient.Address + "', phone='" + patient.Phone + "' WHERE id='" + id + "'";
                 command.ExecuteNonQuery();
                 stat = true;
                 connection.Close();

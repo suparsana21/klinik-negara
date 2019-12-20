@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KlinikBerseri.Pages.Patient;
+using KlinikBerseri.Pages.Examination;
+using KlinikBerseri.Pages.Action;
 
 namespace KlinikBerseri
 {
@@ -35,11 +37,24 @@ namespace KlinikBerseri
             mainForm.mainPanel.Controls.Add(frmDokter);
             frmDokter.Show();
 
+            FormAction formAction = new FormAction();
+            formAction.TopLevel = false;
+            formAction.MdiParent = mainForm;
+            mainForm.mainPanel.Controls.Add(formAction);
+            formAction.Show();
+
             FormPatient formPatient = new FormPatient();
             formPatient.TopLevel = false;
             formPatient.MdiParent = mainForm;
             mainForm.mainPanel.Controls.Add(formPatient);
             formPatient.Show();
+
+            FormExamination formExamination = new FormExamination();
+            formExamination.TopLevel = false;
+            formExamination.MdiParent = mainForm;
+            mainForm.mainPanel.Controls.Add(formExamination);
+            formPatient.Show();
+
         }
 
         private void btnFormDokter_Click(object sender, EventArgs e)
@@ -57,6 +72,22 @@ namespace KlinikBerseri
             formPatient.TopLevel = false;
             mainPanel.Controls.Add(formPatient);
             formPatient.Show();
+        }
+
+        private void btnDataPemeriksaan_Click(object sender, EventArgs e)
+        {
+            FormExamination formExamination = new FormExamination();
+            formExamination.TopLevel = false;
+            mainPanel.Controls.Add(formExamination);
+            formExamination.Show();
+        }
+
+        private void btnFormAction_Click(object sender, EventArgs e)
+        {
+            FormAction formAction = new FormAction();
+            formAction.TopLevel = false;
+            mainPanel.Controls.Add(formAction);
+            formAction.Show();
         }
     }
 }

@@ -37,9 +37,14 @@ namespace KlinikBerseri.Pages.Patient
             }
         }
 
-        private void ModalPatient_Load(object sender, EventArgs e)
+        public void ModalPatient_Load(object sender, EventArgs e)
         {
 
+        }
+
+        internal void ModalPatient_Load(FormPatient parent, string v)
+        {
+           
         }
     }
 }

@@ -35,5 +35,53 @@ namespace KlinikBerseri.Pages.Patient
             dgvListPatient.DataSource = data;
             dgvListPatient.DataMember = "patients";
         }
+
+        private void dgvListPatient_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                ContextMenu menu = new ContextMenu();
+
+                int currentMouseOverRow = dgvListPatient.HitTest(e.X, e.Y).RowIndex;
+
+                if (currentMouseOverRow >= 0)
+                {
+                    menu.MenuItems.Add(new MenuItem("Hapus", deleteData));
+                    menu.MenuItems.Add(new MenuItem("Edit", editData));
+                    dgvListPatient.Rows[currentMouseOverRow].Selected = true;
+                }
+                menu.Show(dgvListPatient, new Point(e.X, e.Y));
+            }
+        }
+
+        private void editData(object sender, EventArgs e)
+        {
+            DataGridViewRow dgvRow = dgvListPatient.SelectedRows[0];
+
+            ModalPatient modalPatient = new ModalPatient(this);
+            string v = dgvRow.Cells["id"].Value.ToString();
+            modalPatient.ModalPatient_Load(this, v);
+        }
+
+        private void deleteData(object sender, EventArgs e)
+        {
+            DataGridViewRow dgvRow = dgvListPatient.SelectedRows[0];
+            var confirm = MessageBox.Show("Apakah anda yakin akan menghapus data pasien " + dgvRow.Cells["name"].Value.ToString() + " ? ",
+                "Konfirmasi",
+               MessageBoxButtons.YesNo);
+
+            if (confirm == DialogResult.Yes)
+            {
+                bool deleted = patientDAO.deleteData(dgvRow.Cells["id"].Value.ToString());
+                if (deleted)
+                {
+                    getAllData();
+                }
+                else
+                {
+                    MessageBox.Show("Data gagal di hapus!");
+                }
+            }
+        }
     }
 }

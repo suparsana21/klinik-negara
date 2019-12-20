@@ -13,6 +13,7 @@ namespace KlinikBerseri.Pages.Doctor
 
     public partial class ModalDoctor : Form
     {
+        
         FormDokter formDokter;
         DoctorDAO doctorDAO = new DoctorDAO();
         public ModalDoctor(FormDokter parentForm)
@@ -20,7 +21,6 @@ namespace KlinikBerseri.Pages.Doctor
             formDokter = parentForm;
             InitializeComponent();
         }
-
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -39,9 +39,21 @@ namespace KlinikBerseri.Pages.Doctor
             }
         }
 
-        private void ModalDoctor_Load(object sender, EventArgs e)
+        public void ModalDoctor_Load(object sender, EventArgs e)
         {
             
+        }
+
+        internal void ShowDialog(string v)
+        {
+
+            
+           
+        }
+
+        public void ShowDialog(FormDokter formDokter, string v)
+        {
+            doctorDAO.editData(v);
         }
     }
 }

@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionDAO.cs" />
     <Compile Include="DoctorModel.cs" />
     <Compile Include="DoctorDAO.cs" />
     <Compile Include="Form1.cs">
@@ -73,6 +74,19 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActionModel.cs" />
+    <Compile Include="Pages\Action\FormAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Action\FormAction.Designer.cs">
+      <DependentUpon>FormAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Action\ModalAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Action\ModalAction.Designer.cs">
+      <DependentUpon>ModalAction.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\Doctor\FormDokter.cs">
       <SubType>Form</SubType>
@@ -85,6 +99,18 @@
     </Compile>
     <Compile Include="Pages\Doctor\ModalDoctor.Designer.cs">
       <DependentUpon>ModalDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Examination\FormExamination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Examination\FormExamination.Designer.cs">
+      <DependentUpon>FormExamination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Examination\ModalExamination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Examination\ModalExamination.Designer.cs">
+      <DependentUpon>ModalExamination.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\Patient\FormPatient.cs">
       <SubType>Form</SubType>
@@ -105,11 +131,23 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Action\FormAction.resx">
+      <DependentUpon>FormAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Action\ModalAction.resx">
+      <DependentUpon>ModalAction.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\Doctor\FormDokter.resx">
       <DependentUpon>FormDokter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Doctor\ModalDoctor.resx">
       <DependentUpon>ModalDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Examination\FormExamination.resx">
+      <DependentUpon>FormExamination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Examination\ModalExamination.resx">
+      <DependentUpon>ModalExamination.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Patient\FormPatient.resx">
       <DependentUpon>FormPatient.cs</DependentUpon>
