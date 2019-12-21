@@ -125,8 +125,10 @@
             this.dgvListDokter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvListDokter.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvListDokter.Location = new System.Drawing.Point(0, 0);
+            this.dgvListDokter.MultiSelect = false;
             this.dgvListDokter.Name = "dgvListDokter";
             this.dgvListDokter.ReadOnly = true;
+            this.dgvListDokter.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListDokter.Size = new System.Drawing.Size(877, 527);
             this.dgvListDokter.TabIndex = 0;
             this.dgvListDokter.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvListDokter_MouseClick);

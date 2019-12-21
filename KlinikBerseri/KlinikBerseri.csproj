@@ -76,6 +76,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="ActionModel.cs" />
+    <Compile Include="Helper\HelperDAO.cs" />
     <Compile Include="Pages\Action\FormAction.cs">
       <SubType>Form</SubType>
     </Compile>

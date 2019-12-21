@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
+using KlinikBerseri.Helper;
 
 namespace KlinikBerseri
 {
     class PatientDAO
     {
         private MySqlCommand command = null;
-        string config = "Server=localhost;Port=3306;UID=root;PWD=;Database=dbklinikberseri";
+        string config = HelperDAO.configConnection;
         MySqlConnection connection = new MySqlConnection();
 
         public PatientDAO()

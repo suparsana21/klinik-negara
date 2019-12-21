@@ -31,6 +31,7 @@ namespace KlinikBerseri
             Form1 mainForm = new Form1();
             mainForm.CenterToScreen();
 
+            /**
             FormDokter frmDokter = new FormDokter();
             frmDokter.TopLevel = false;
             frmDokter.MdiParent = mainForm;
@@ -54,7 +55,7 @@ namespace KlinikBerseri
             formExamination.MdiParent = mainForm;
             mainForm.mainPanel.Controls.Add(formExamination);
             formPatient.Show();
-
+            **/
         }
 
         private void btnFormDokter_Click(object sender, EventArgs e)
@@ -62,6 +63,7 @@ namespace KlinikBerseri
             
             FormDokter frmDokter = new FormDokter();
             frmDokter.TopLevel = false;
+            mainPanel.Controls.Clear();
             mainPanel.Controls.Add(frmDokter);
             frmDokter.Show();
         }
@@ -70,6 +72,7 @@ namespace KlinikBerseri
         {
             FormPatient formPatient = new FormPatient();
             formPatient.TopLevel = false;
+            mainPanel.Controls.Clear();
             mainPanel.Controls.Add(formPatient);
             formPatient.Show();
         }
@@ -78,6 +81,7 @@ namespace KlinikBerseri
         {
             FormExamination formExamination = new FormExamination();
             formExamination.TopLevel = false;
+            mainPanel.Controls.Clear();
             mainPanel.Controls.Add(formExamination);
             formExamination.Show();
         }
@@ -86,6 +90,7 @@ namespace KlinikBerseri
         {
             FormAction formAction = new FormAction();
             formAction.TopLevel = false;
+            mainPanel.Controls.Clear();
             mainPanel.Controls.Add(formAction);
             formAction.Show();
         }

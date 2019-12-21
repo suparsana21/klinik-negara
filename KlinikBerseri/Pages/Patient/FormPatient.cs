@@ -83,5 +83,10 @@ namespace KlinikBerseri.Pages.Patient
                 }
             }
         }
+
+        private void dgvListPatient_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

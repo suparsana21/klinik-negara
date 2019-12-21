@@ -31,10 +31,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.dgvListAction = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -52,13 +52,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(849, 67);
             this.panel1.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(0, 73);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(861, 452);
-            this.panel3.TabIndex = 2;
             // 
             // panel2
             // 
@@ -95,37 +88,50 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Data Tindakan";
             // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(0, 73);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(861, 452);
+            this.panel3.TabIndex = 2;
+            // 
             // dgvListAction
             // 
+            this.dgvListAction.AllowUserToDeleteRows = false;
+            this.dgvListAction.AllowUserToResizeColumns = false;
             this.dgvListAction.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvListAction.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvListAction.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvListAction.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            this.dgvListAction.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            this.dgvListAction.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvListAction.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Tw Cen MT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvListAction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListAction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tw Cen MT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvListAction.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListAction.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvListAction.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvListAction.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvListAction.Location = new System.Drawing.Point(0, 67);
+            this.dgvListAction.MultiSelect = false;
             this.dgvListAction.Name = "dgvListAction";
+            this.dgvListAction.ReadOnly = true;
+            this.dgvListAction.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListAction.Size = new System.Drawing.Size(849, 525);
             this.dgvListAction.TabIndex = 4;
+            this.dgvListAction.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListAction_CellContentClick_1);
             // 
             // FormAction
             // 
@@ -153,6 +159,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvListAction;
+        public System.Windows.Forms.DataGridView dgvListAction;
     }
 }
