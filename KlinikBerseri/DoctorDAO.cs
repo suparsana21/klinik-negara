@@ -11,7 +11,7 @@ namespace KlinikBerseri
     class DoctorDAO
     {
         private MySqlCommand command = null;
-        string config = "Server=localhost;Port=3306;UID=root;PWD=;Database=dbklinikberseri";
+        string config = "Server=127.0.0.1;Port=3306;UID=root;PWD=;Database=dbklinikberseri";
         MySqlConnection connection = new MySqlConnection();
 
         public DoctorDAO()
