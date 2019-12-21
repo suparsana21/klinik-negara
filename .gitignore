@@ -2,8 +2,8 @@
 *.dll
 *.exe
 *.pdb
-/build/
-/Debug/
+/bin/
+/obj/
 *.suo
 *.user
 _ReSharper.*/
